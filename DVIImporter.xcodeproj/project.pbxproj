@@ -193,7 +193,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = F976620C0861BEF900829F8B /* Build configuration list for PBXProject "DVIImporter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -303,6 +303,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
 				LIBRARY_STYLE = Bundle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
 				PRODUCT_NAME = DVIImporter;
 				WRAPPER_EXTENSION = mdimporter;
 			};
@@ -316,6 +317,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
 				PRODUCT_NAME = DVIImporter;
 				WRAPPER_EXTENSION = mdimporter;
 			};
@@ -328,6 +330,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
 				PRODUCT_NAME = DVIImporter;
 				WRAPPER_EXTENSION = mdimporter;
 			};
