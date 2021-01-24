@@ -400,7 +400,7 @@ static void printpage(DVIParser *parser)       /* 'end of page', writes lines of
     } 
 
     parser->currentline = parser->firstline;
-    while (parser->currentline->next != nil) {
+    while (parser->currentline != nil && parser->currentline->next != nil) {
         parser->currentline = parser->currentline->next;
         free(parser->currentline->prev);
     }
@@ -960,4 +960,3 @@ CFStringRef CreateStringWithContentsOfDVIFile(CFStringRef absolutePath)
     return str;
 }
 
-   

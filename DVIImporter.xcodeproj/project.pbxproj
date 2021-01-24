@@ -239,7 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\nrm -rf ${HOME}/Library/Spotlight/DVIImporter.mdimporter\n/Developer/Tools/CpMac -r ${BUILT_PRODUCTS_DIR}/DVIImporter.mdimporter ${HOME}/Library/Spotlight\nexit 0";
+			shellScript = "# shell script goes here\nrm -rf ${HOME}/Library/Spotlight/DVIImporter.mdimporter\n/Developer/Tools/CpMac -r ${BUILT_PRODUCTS_DIR}/DVIImporter.mdimporter ${HOME}/Library/Spotlight\nexit 0\n";
 		};
 		F9FCECA3083EDB2500EEDB09 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -294,49 +294,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F97662010861BEF900829F8B /* Development */ = {
+		F94686BC25BD2CA500438A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "TeX Live Utility Signing Certificate";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+			};
+			name = Debug;
+		};
+		F94686BD25BD2CA500438A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9C7F25F13A007850031774F /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Spotlight;
-				LIBRARY_STYLE = Bundle;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
-				PRODUCT_NAME = DVIImporter;
-				WRAPPER_EXTENSION = mdimporter;
-			};
-			name = Development;
-		};
-		F97662020861BEF900829F8B /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C7F26013A007850031774F /* Release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Library/Spotlight;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
 				PRODUCT_NAME = DVIImporter;
 				WRAPPER_EXTENSION = mdimporter;
 			};
-			name = Deployment;
+			name = Debug;
 		};
-		F97662030861BEF900829F8B /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Library/Spotlight;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
-				PRODUCT_NAME = DVIImporter;
-				WRAPPER_EXTENSION = mdimporter;
-			};
-			name = Default;
-		};
-		F97662050861BEF900829F8B /* Development */ = {
+		F94686BE25BD2CA500438A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -356,45 +339,9 @@
 					"-Wno-unknown-pragmas",
 				);
 			};
-			name = Development;
+			name = Debug;
 		};
-		F97662060861BEF900829F8B /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Install;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Deployment;
-		};
-		F97662070861BEF900829F8B /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Install;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Default;
-		};
-		F97662090861BEF900829F8B /* Development */ = {
+		F94686BF25BD2CA500438A18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -414,9 +361,56 @@
 					"-Wno-unknown-pragmas",
 				);
 			};
-			name = Development;
+			name = Debug;
 		};
-		F976620A0861BEF900829F8B /* Deployment */ = {
+		F94686C025BD2CAD00438A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C7F26013A007850031774F /* Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "TeX Live Utility Signing Certificate";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+			};
+			name = Release;
+		};
+		F94686C125BD2CAD00438A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C7F26013A007850031774F /* Release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.amaxwell.dviimporter;
+				PRODUCT_NAME = DVIImporter;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		F94686C225BD2CAD00438A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Install;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		F94686C325BD2CAD00438A18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -433,49 +427,7 @@
 					"-Wno-unknown-pragmas",
 				);
 			};
-			name = Deployment;
-		};
-		F976620B0861BEF900829F8B /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = DiskImage;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Default;
-		};
-		F976620D0861BEF900829F8B /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "TeX Live Utility Signing Certificate";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-			};
-			name = Development;
-		};
-		F976620E0861BEF900829F8B /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C7F26013A007850031774F /* Release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "TeX Live Utility Signing Certificate";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-			};
-			name = Deployment;
-		};
-		F976620F0861BEF900829F8B /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "TeX Live Utility Signing Certificate";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -483,42 +435,38 @@
 		F97662000861BEF900829F8B /* Build configuration list for PBXNativeTarget "DVIImporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F97662010861BEF900829F8B /* Development */,
-				F97662020861BEF900829F8B /* Deployment */,
-				F97662030861BEF900829F8B /* Default */,
+				F94686BD25BD2CA500438A18 /* Debug */,
+				F94686C125BD2CAD00438A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		F97662040861BEF900829F8B /* Build configuration list for PBXAggregateTarget "Install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F97662050861BEF900829F8B /* Development */,
-				F97662060861BEF900829F8B /* Deployment */,
-				F97662070861BEF900829F8B /* Default */,
+				F94686BE25BD2CA500438A18 /* Debug */,
+				F94686C225BD2CAD00438A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		F97662080861BEF900829F8B /* Build configuration list for PBXAggregateTarget "DiskImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F97662090861BEF900829F8B /* Development */,
-				F976620A0861BEF900829F8B /* Deployment */,
-				F976620B0861BEF900829F8B /* Default */,
+				F94686BF25BD2CA500438A18 /* Debug */,
+				F94686C325BD2CAD00438A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		F976620C0861BEF900829F8B /* Build configuration list for PBXProject "DVIImporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F976620D0861BEF900829F8B /* Development */,
-				F976620E0861BEF900829F8B /* Deployment */,
-				F976620F0861BEF900829F8B /* Default */,
+				F94686BC25BD2CA500438A18 /* Debug */,
+				F94686C025BD2CAD00438A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
